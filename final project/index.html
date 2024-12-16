@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Ball Z Gym</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dragon Ball Z Gym</h1>
+    </header>
+	<nav>
+    <ul>
+        <li><a href="index.html" class="dbz-nav">Home</a></li>
+        <li><a href="training_challenges.html" class="dbz-nav">Training Challenges</a></li>
+        <li><a href="membership.html" class="dbz-nav">Membership</a></li>
+    </ul>
+</nav>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h2>Unleash Your Inner Saiyan</h2>
+            <p>Power up and achieve your fitness goals with the ultimate DBZ experience.</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Find Your Gym Location">
+                <button>Search</button>
+            </div>
+        </section>
+
+       <!-- Slideshow Section -->
+<section class="slideshow-container">
+    <div class="slideshow-box fade">
+        <img src="images/gokuweights.gif" alt="Free Training Experience">
+        <div class="slide-text">
+            <h3>Free Training Experience</h3>
+            <p>Train like Goku with our top-notch facilities and expert trainers.</p>
+        </div>
+    </div>
+
+    <div class="slideshow-box fade">
+        <img src="images/piccolomeditating.gif" alt="Membership Benefits">
+        <div class="slide-text">
+            <h3>Membership Benefits</h3>
+            <p>Exclusive DBZ merchandise, state-of-the-art equipment, and more.</p>
+        </div>
+    </div>
+
+    <div class="slideshow-box fade">
+        <img src="images/vegetapunch.gif" alt="Coaching Tips">
+        <div class="slide-text">
+            <h3>Coaching Tips</h3>
+            <p>Learn the techniques of the Saiyans to transform your power level.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Google Map Section -->
+<section class="map-section">
+    <h2>Find Us Here</h2>
+    <div id="map"></div>
+</section>
+
+<!-- Google Maps API Script -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_QeMbr-OfgVewjOZ58naa_hZy7uEOaTw&callback=initMap" async defer></script>
+<!-- Link to External JavaScript -->
+<script src="index.js"></script>
+
+<!-- Call-to-Action Section -->
+<section class="cta">
+    <h2>Ready to Power Up?</h2>
+    <p>Join the Dragon Ball Z Gym today and unleash your true potential!</p>
+   <a href="membership.html" class="cta-button">Sign Up Now</a>
+</section>
+
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Dragon Ball Z Gym. All Rights Reserved.</p>
+    </footer>
+	
+	<script src="index.js"></script>
+
+</body>
+</html>

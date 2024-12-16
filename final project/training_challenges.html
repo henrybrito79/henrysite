@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBZ Training Challenges</title>
+    <link rel="stylesheet" href="training_challenges_style.css">
+    <script defer src="training_challenges_script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>DBZ Training Challenges</h1>
+    </header>
+	<nav>
+    <ul>
+        <li><a href="index.html" class="dbz-nav">Home</a></li>
+        <li><a href="training_challenges.html" class="dbz-nav">Training Challenges</a></li>
+        <li><a href="membership.html" class="dbz-nav">Membership</a></li>
+    </ul>
+</nav>
+
+    <main>
+        <section class="training-challenges">
+            <h2>Choose Your Training Challenge</h2>
+            <div class="challenges">
+                <div class="challenge" id="goku-challenge">
+                    <img src="images/gokugravity.gif" alt="Goku Training gif">
+                    <h3>Goku's Gravity Room Challenge</h3>
+                    <button onclick="startChallenge('goku')">Start Training</button>
+                </div>
+
+                <div class="challenge" id="vegeta-challenge">
+                    <img src="images/vegetagravity.gif" alt="Vegeta Training gif">
+                    <h3>Vegeta's 150x Gravity Workout</h3>
+                    <button onclick="startChallenge('vegeta')">Start Training</button>
+                </div>
+
+                <div class="challenge" id="piccolo-challenge">
+                     <img src="images/piccoloweights.gif" alt="Piccolo Training GIF">
+                    <h3>Piccolo's Weighted Armor Training</h3>
+                    <button onclick="startChallenge('piccolo')">Start Training</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="challenge-description" class="hidden">
+            <h2 id="character-name"></h2>
+            <p id="challenge-details"></p>
+            <button onclick="endChallenge()">End Training</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dragon Ball Z Gym. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

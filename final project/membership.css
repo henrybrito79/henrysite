@@ -1,0 +1,143 @@
+/* General Styles for DBZ-Themed Membership Form */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #ff9f43, #f368e0);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+
+
+/* Goku Images */
+body::before, body::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+body::before {
+    left: 20px;
+    background-image: url('images/goku-left.png'); /* Replace with the actual path to Goku image */
+}
+
+body::after {
+    right: 20px;
+    background-image: url('images/goku-right.png'); /* Replace with the actual path to Goku image */
+    transform: translateY(-50%) scaleX(-1); /* Flip the image horizontally */
+}
+
+main {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 20px 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Impact', sans-serif;
+    color: #feca57;
+    text-shadow: 2px 2px 4px #000;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #fff;
+    color: #333;
+    font-size: 1em;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+input::placeholder, textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Radio Button Styles */
+input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #feca57;
+}
+
+/* Buttons */
+button {
+    background: #feca57;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Membership Plan Section */
+div {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+/* Adjustments for Mobile */
+@media (max-width: 600px) {
+    div {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
