@@ -30,12 +30,12 @@ body::before, body::after {
 
 body::before {
     left: 20px;
-    background-image: url('images/goku-left.png'); /* Replace with the actual path to Goku image */
+    background-image: url('images/goku-left.png'); 
 }
 
 body::after {
     right: 20px;
-    background-image: url('images/goku-right.png'); /* Replace with the actual path to Goku image */
+    background-image: url('images/goku-right.png');
     transform: translateY(-50%) scaleX(-1); /* Flip the image horizontally */
 }
 
